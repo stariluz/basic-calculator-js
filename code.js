@@ -124,6 +124,7 @@ function ans(){
 function borrar(){
   imprime.innerText="";
   resultado=0;
+  operacion="";
   entrada.value="";
 }
 function teclear(tecla){

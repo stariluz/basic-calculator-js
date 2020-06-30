@@ -1,6 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 body {
-  @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
-  font-family: "Roboto";
   padding: 10px;
   margin: 0px;
   display: flex;
@@ -11,10 +10,11 @@ body {
   padding: 40px;
   margin: 0px;
   max-width: 390px;
-  background-color: #282d2f;
+  background-color: #34383a;
   border-radius: 30px;
 }
 .pantalla{
+  font-family: 'Fredoka One', cursive;
   margin: 5px;
   background-color: white;
   height: 120px;
@@ -45,6 +45,7 @@ body {
   align-items: center;
 }
 .input{
+  font-family: 'Fredoka One', cursive;
   height: 65px;
   width: 100%;
   padding: 5px;
@@ -55,7 +56,6 @@ body {
   box-sizing: border-box;
   border-radius: 0px 0px 10px 10px;
 }
-
 .teclado {
   display: flex;
   justify-content: center;
@@ -63,6 +63,7 @@ body {
   flex-wrap: wrap;
 }
 .boton {
+  font-family: 'Fredoka One', cursive;
   height: 90px;
   width: 120px;
   margin: 5px;
