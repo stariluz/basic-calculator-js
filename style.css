@@ -1,0 +1,83 @@
+body {
+  @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+  font-family: "Roboto";
+  padding: 10px;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedorCalculadora {
+  padding: 40px;
+  margin: 0px;
+  max-width: 390px;
+  background-color: #282d2f;
+  border-radius: 30px;
+}
+.pantalla{
+  margin: 5px;
+  background-color: white;
+  height: 120px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.pantalla-top {
+  height: 55px;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+}
+.borrar {
+  border: none;
+  padding: 3px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 30px;
+  font-weight: 600;
+  background-color: #ebeded;
+  color: #bcc6c7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input{
+  height: 65px;
+  width: 100%;
+  padding: 5px;
+  font-size: 30px;
+  border: none;
+  text-align: right;
+  background-color: #ececec;
+  box-sizing: border-box;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.teclado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.boton {
+  height: 90px;
+  width: 120px;
+  margin: 5px;
+  font-size: 30px;
+  background-color: #e0e7e7;
+  display: flex;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.boton.op{
+  background-color: #60bd60;
+  color: #ffffff;
+}
+.boton.op#ans{
+  background-color: #5287c3;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="contenedorCalculadora">
+    <div class="pantalla">
+      <div class="pantalla-top"">
+        <button class="borrar" id="borrar" onclick="borrar()">x</button>
+        <div class="resultado" id="resultado"></div>
+      </div>
+      <div class="entrada" id="entrada">
+        <input type="text" class="input" id="numero" value="">
+      </div>
+    </div>
+    <div class="teclado">
+      <button class="boton op" id="suma" onclick="sumar()">+</button>
+      <button class="boton op" id="resta" onclick="restar()">-</button>
+      <button class="boton op" id="multiplicar" onclick="multiplicar()">×</button>
+      <button class="boton op" id="dividir" onclick="dividir()">÷</button>
+      <button class="boton op" id="potencia" onclick="potencia()">^</button>
+      <button class="boton op" id="raiz" onclick="raiz()">^(¹/ )</button>
+      <button class="boton num" id="9" onclick="teclear(9)">9</button>
+      <button class="boton num" id="8" onclick="teclear(8)">8</button>
+      <button class="boton num" id="7" onclick="teclear(7)">7</button>
+      <button class="boton num" id="6" onclick="teclear(6)">6</button>
+      <button class="boton num" id="5" onclick="teclear(5)">5</button>
+      <button class="boton num" id="4" onclick="teclear(4)">4</button>
+      <button class="boton num" id="3" onclick="teclear(3)">3</button>
+      <button class="boton num" id="2" onclick="teclear(2)">2</button>
+      <button class="boton num" id="1" onclick="teclear(1)">1</button>
+      <button class="boton num" id="0" onclick="teclear(0)">0</button>
+      <button class="boton op" id="ans" onclick="ans()">ans</button>
+      <button class="boton op" id="igual" onclick="igual()">=</button>
+    </div>
+  </div>
+  <script src="code.js"></script>
+</body>
+</html>
