@@ -16,12 +16,11 @@ body {
 .pantalla{
   font-family: 'Fredoka One', cursive;
   margin: 5px;
-  background-color: white;
   height: 120px;
-  border-radius: 10px;
   margin-bottom: 15px;
 }
 .pantalla-top {
+  background-color: white;
   height: 45%;
   padding: 5px 10px;
   box-sizing: border-box;
@@ -29,6 +28,7 @@ body {
   justify-content: space-between;
   align-items: center;
   font-size: 25px;
+  border-radius: 10px 10px 0px 0px;
 }
 .borrar {
   font-family: 'Fredoka One', cursive;
@@ -94,8 +94,14 @@ body {
     height: 90px;
   }
   .boton {
-    height: 60px;
+    padding: 7% 0px;
+    height: auto;
     width: 30%;
     font-size: 140%;
+  }
+  .borrar {
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
   }
 }
