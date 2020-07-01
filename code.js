@@ -22,7 +22,7 @@ function operaciones(opcion){
     resultado=Math.pow(resultado, (1/val));
     salida=document.createTextNode(")");
     imprime.appendChild(salida);
-  }else{
+  }else if(opcion===""){
     resultado=val;
   }
 }
@@ -35,7 +35,6 @@ function sumar(){
   imprime.appendChild(salida);
   operaciones(operacion);
   salida=document.createTextNode("+");
-  console.log(salida);
   operacion="suma"
   entrada.value="";
   imprime.appendChild(salida);
@@ -108,13 +107,10 @@ function raiz(){
 function igual(){
   val=parseFloat(entrada.value);
   operaciones(operacion);
-  imprime.innerText="";
+  imprime.innerText+=(val+" = ");
   operacion="";
-  entrada.value="";
-  salida=document.createTextNode(resultado);
+  entrada.value=resultado;
   anterior=resultado;
-  resultado=0;
-  imprime.appendChild(salida);
 }
 function ans(){
   val=anterior;

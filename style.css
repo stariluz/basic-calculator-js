@@ -66,7 +66,7 @@ body {
   font-family: 'Fredoka One', cursive;
   height: 90px;
   width: 120px;
-  margin: 5px;
+  margin: 1.2%;
   font-size: 30px;
   background-color: #e0e7e7;
   display: flex;
@@ -81,4 +81,12 @@ body {
 }
 .boton.op#ans{
   background-color: #5287c3;
+}
+/* Diseño para celular*/
+@media screen and (max-width:450px){
+  .boton {
+    height: 60px;
+    width: 30%;
+    font-size: 100%;
+  }
 }
