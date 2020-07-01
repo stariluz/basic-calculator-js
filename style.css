@@ -22,7 +22,7 @@ body {
   margin-bottom: 15px;
 }
 .pantalla-top {
-  height: 55px;
+  height: 45%;
   padding: 5px 10px;
   box-sizing: border-box;
   display: flex;
@@ -31,6 +31,7 @@ body {
   font-size: 25px;
 }
 .borrar {
+  font-family: 'Fredoka One', cursive;
   border: none;
   padding: 3px;
   width: 40px;
@@ -44,14 +45,16 @@ body {
   justify-content: center;
   align-items: center;
 }
-.input{
+.entrada {
   font-family: 'Fredoka One', cursive;
-  height: 65px;
+  height: 55%;
   width: 100%;
-  padding: 5px;
+  padding: 5px 10px;
   font-size: 30px;
   border: none;
-  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   background-color: #ececec;
   box-sizing: border-box;
   border-radius: 0px 0px 10px 10px;
@@ -85,11 +88,14 @@ body {
 /* Diseño para celular*/
 @media screen and (max-width:450px){
   .contenedorCalculadora {
-    padding: 20px;
+    padding: 25px;
+  }
+  .pantalla {
+    height: 90px;
   }
   .boton {
     height: 60px;
     width: 30%;
-    font-size: 100%;
+    font-size: 140%;
   }
 }

@@ -30,99 +30,103 @@ function sumar(){
   if(operacion===""){
     imprime.innerText="";
   }
-  val=parseFloat(entrada.value);
+  val=parseFloat(entrada.innerText);
   salida=document.createTextNode(val);
   imprime.appendChild(salida);
   operaciones(operacion);
   salida=document.createTextNode("+");
   operacion="suma"
-  entrada.value="";
+  entrada.innerText="";
   imprime.appendChild(salida);
 }
 function restar(){
   if(operacion===""){
     imprime.innerText="";
   }
-  val=parseFloat(entrada.value);
+  val=parseFloat(entrada.innerText);
   salida=document.createTextNode(val);
   imprime.appendChild(salida);
   operaciones(operacion);
   salida=document.createTextNode("-");
   operacion="resta"
-  entrada.value="";
+  entrada.innerText="";
   imprime.appendChild(salida);
 }
 function multiplicar(){
   if(operacion===""){
     imprime.innerText="";
   }
-  val=parseFloat(entrada.value);
+  val=parseFloat(entrada.innerText);
   salida=document.createTextNode(val);
   imprime.appendChild(salida);
   operaciones(operacion);
   salida=document.createTextNode("×");
   operacion="multiplicacion"
-  entrada.value="";
+  entrada.innerText="";
   imprime.appendChild(salida);
 }
 function dividir(){
   if(operacion===""){
     imprime.innerText="";
   }
-  val=parseFloat(entrada.value);
+  val=parseFloat(entrada.innerText);
   salida=document.createTextNode(val);
   imprime.appendChild(salida);
   operaciones(operacion);
   salida=document.createTextNode("÷");
   operacion="division"
-  entrada.value="";
+  entrada.innerText="";
   imprime.appendChild(salida);
 }
 function potencia(){
   if(operacion===""){
     imprime.innerText="";
   }
-  val=parseFloat(entrada.value);
+  val=parseFloat(entrada.innerText);
   salida=document.createTextNode(val);
   imprime.appendChild(salida);
   operaciones(operacion);
   salida=document.createTextNode("^");
   operacion="potencia"
-  entrada.value="";
+  entrada.innerText="";
   imprime.appendChild(salida);
 }
 function raiz(){
   if(operacion===""){
     imprime.innerText="";
   }
-  val=parseFloat(entrada.value);
+  val=parseFloat(entrada.innerText);
   salida=document.createTextNode(val);
   imprime.appendChild(salida);
   operaciones(operacion);
   salida=document.createTextNode("^(1/");
   operacion="raiz"
-  entrada.value="";
+  entrada.innerText="";
   imprime.appendChild(salida);
 }
 function igual(){
-  val=parseFloat(entrada.value);
+  if(operacion===""){
+    imprime.innerText="";
+  }
+  val=parseFloat(entrada.innerText);
+  imprime.innerText+=(val);
   operaciones(operacion);
-  imprime.innerText+=(val+" = ");
+  imprime.innerText+=(" = ");
   operacion="";
-  entrada.value=resultado;
+  entrada.innerText=resultado;
   anterior=resultado;
 }
 function ans(){
   val=anterior;
   operaciones(operacion);
-  entrada.value=val;
+  entrada.innerText=val;
 }
 function borrar(){
   imprime.innerText="";
   resultado=0;
   operacion="";
-  entrada.value="";
+  entrada.innerText="";
 }
 function teclear(tecla){
-  entrada.value=entrada.value+tecla;
+  entrada.innerText+=tecla;
 }
