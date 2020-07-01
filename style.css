@@ -84,6 +84,9 @@ body {
 }
 /* Diseño para celular*/
 @media screen and (max-width:450px){
+  .contenedorCalculadora {
+    padding: 20px;
+  }
   .boton {
     height: 60px;
     width: 30%;
