@@ -1,25 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
 body {
-  padding: 10px;
+  box-sizing: border-box;
+  padding: 1vh;
+  height: 100%;
   margin: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.contenedorCalculadora {
-  padding: 40px;
+.calculator-container {
+  /* This is the parent class for all the calculator */
+  box-sizing: border-box;
+  padding: 3vh;
   margin: 0px;
-  max-width: 390px;
+  max-width: 90vw;
+  height: 100%;
   background-color: #34383a;
   border-radius: 30px;
 }
-.pantalla{
+.screen{
   font-family: 'Fredoka One', cursive;
-  margin: 5px;
-  height: 120px;
-  margin-bottom: 15px;
+  position: relative;
+  top: 1%;
+  margin: 0px 5px;
+  height: 15%;
 }
-.pantalla-top {
+.screen__head {
   background-color: white;
   height: 45%;
   padding: 5px 10px;
@@ -30,7 +40,7 @@ body {
   font-size: 25px;
   border-radius: 10px 10px 0px 0px;
 }
-.borrar {
+.erase--all {
   font-family: 'Fredoka One', cursive;
   border: none;
   padding: 3px;
@@ -59,16 +69,34 @@ body {
   box-sizing: border-box;
   border-radius: 0px 0px 10px 10px;
 }
-.teclado {
-  display: flex;
+.keyboard {
+  box-sizing: border-box;
+  position: relative;
+  height: 81%;
+  top: 4%;
+}
+.keyboard > div{
+  /* display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
+  box-sizing: border-box;
+  display: grid;
+}
+.keyboard__up {
+  grid-template-columns: repeat(6, 1fr);
+  height: 48%;
+}
+.keyboard__down {
+  grid-template-columns: repeat(5, 1fr);
+  position: relative;
+  top: 2%;
+  height: 50%;
 }
 .boton {
   font-family: 'Fredoka One', cursive;
-  height: 90px;
-  width: 120px;
+  /* height: 4vh;
+  width: 14vw; */
   margin: 1.2%;
   font-size: 30px;
   background-color: #e0e7e7;
@@ -90,7 +118,7 @@ body {
   .contenedorCalculadora {
     padding: 25px;
   }
-  .pantalla {
+  .screen {
     height: 90px;
   }
   .boton {
@@ -99,9 +127,10 @@ body {
     width: 30%;
     font-size: 140%;
   }
-  .borrar {
+  .erase {
     width: 30px;
     height: 30px;
     font-size: 25px;
+    text-align: center;
   }
 }

@@ -1,6 +1,6 @@
-var resultado=0;
+var result=0;
 var entrada=document.getElementById("numero");
-var imprime=document.getElementById("resultado");
+var imprime=document.getElementById("result");
 var suma=document.getElementById("suma");
 
 var operacion="";
@@ -9,21 +9,21 @@ var anterior=0;
 
 function operaciones(opcion){
   if(opcion==="suma"){
-    resultado+=val;
+    result+=val;
   }else if(opcion==="resta"){
-    resultado-=val;
+    result-=val;
   }else if(opcion==="multiplicacion"){
-    resultado*=val;
+    result*=val;
   }else if(opcion==="division"){
-    resultado/=val;
+    result/=val;
   }else if(opcion==="potencia"){
-    resultado=Math.pow(resultado, val);
+    result=Math.pow(result, val);
   }else if(opcion==="raiz"){
-    resultado=Math.pow(resultado, (1/val));
+    result=Math.pow(result, (1/val));
     salida=document.createTextNode(")");
     imprime.appendChild(salida);
   }else if(opcion===""){
-    resultado=val;
+    result=val;
   }
 }
 function sumar(){
@@ -113,17 +113,17 @@ function igual(){
   operaciones(operacion);
   imprime.innerText+=(" = ");
   operacion="";
-  entrada.innerText=resultado;
-  anterior=resultado;
+  entrada.innerText=result;
+  anterior=result;
 }
 function ans(){
   val=anterior;
   operaciones(operacion);
   entrada.innerText=val;
 }
-function borrar(){
+function eraseAll(){
   imprime.innerText="";
-  resultado=0;
+  result=0;
   operacion="";
   entrada.innerText="";
 }
